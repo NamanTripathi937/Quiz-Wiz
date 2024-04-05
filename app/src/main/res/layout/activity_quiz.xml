@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz_1"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0"
+            android:src="@drawable/avtar" />
+
+        <TextView
+            android:id="@+id/NameSpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_bold"
+            android:text="TextView"
+            android:textColor="@color/Textcolorwhite"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:src="@drawable/coin" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="@font/poppins_bold"
+            android:text="0 Coins"
+            android:textColor="@color/Textcolorwhite"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/categoryimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/scince"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Question"
+        app:layout_constraintEnd_toEndOf="@+id/categoryimg"
+        app:layout_constraintStart_toStartOf="@+id/categoryimg"
+        app:layout_constraintTop_toBottomOf="@+id/categoryimg" />
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="What is your name ?"
+        app:layout_constraintEnd_toEndOf="@+id/textView21"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Select one of these"
+        app:layout_constraintEnd_toEndOf="@+id/Question"
+        app:layout_constraintStart_toStartOf="@+id/Question"
+        app:layout_constraintTop_toBottomOf="@+id/Question" />
+
+    <Button
+        android:id="@+id/Option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/Textcolorwhite"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Option 1"
+        android:textColor="@color/Textcolorblack"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/Option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/Textcolorwhite"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Option 3"
+        android:textColor="@color/Textcolorblack"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/Option2"
+        app:layout_constraintStart_toStartOf="@+id/Option2"
+        app:layout_constraintTop_toBottomOf="@+id/Option2" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/Textcolorwhite"
+        android:fontFamily="@font/poppins_bold"
+        android:text=" Next Question"
+        android:textColor="@color/Textcolorblack"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Option4" />
+
+    <Button
+        android:id="@+id/Option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/Textcolorwhite"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Option 2"
+        android:textColor="@color/Textcolorblack"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/Option1"
+        app:layout_constraintStart_toStartOf="@+id/Option1"
+        app:layout_constraintTop_toBottomOf="@+id/Option1" />
+
+    <Button
+        android:id="@+id/Option4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/Textcolorwhite"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Option 4"
+        android:textColor="@color/Textcolorblack"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/Option3"
+        app:layout_constraintStart_toStartOf="@+id/Option3"
+        app:layout_constraintTop_toBottomOf="@+id/Option3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
