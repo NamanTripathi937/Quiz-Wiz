@@ -51,6 +51,8 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if (Firebase.auth.currentUser != null){
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
             finish()
         }
     }

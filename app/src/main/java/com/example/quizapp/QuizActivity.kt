@@ -37,7 +37,7 @@ class QuizActivity : AppCompatActivity() {
                 }
 
             }
-        binding.categoryimg.setImageResource(image )
+        binding.categoryimg.setImageResource(image)
         binding.imageView5.setOnClickListener{
             val bottomSheetDialog: BottomSheetDialogFragment = Withdrawal()
             bottomSheetDialog.show(this@QuizActivity.supportFragmentManager,"TEST")
